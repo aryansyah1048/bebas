@@ -33,7 +33,7 @@ app.get('/read', (req, res) => {
     if (err) {
       return res.status(500).send('Gagal membaca file atau belum ada pesan.');
     }
-    res.send(Isi pesan.txt: ${data});
+    res.send(`Isi pesan.txt: ${data}`);
   });
 });
 
