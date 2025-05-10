@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send("ok)
+  res.send("ok")
 })
 
 // Endpoint untuk menulis pesan (via GET method): /write?msg=pesan
