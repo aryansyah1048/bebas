@@ -3,6 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 
+const cors = require('cors');
+
+// Mengizinkan semua asal
+app.use(cors());
+
 // Gunakan port dari environment (Railway, Heroku, dll) atau default 3000
 const PORT = process.env.PORT || 3000;
 
