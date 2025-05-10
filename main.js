@@ -6,6 +6,10 @@ const app = express();
 // Gunakan port dari environment (Railway, Heroku, dll) atau default 3000
 const PORT = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+  res.send("ok)
+})
+
 // Endpoint untuk menulis pesan (via GET method): /write?msg=pesan
 app.get('/write', (req, res) => {
   const message = req.query.msg;
